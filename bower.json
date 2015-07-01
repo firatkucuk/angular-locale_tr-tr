@@ -1,11 +1,12 @@
 {
   "name"        : "angular-locale_tr-tr",
-  "main"        : "angular-locale_tr-tr.js",
-  "version"     : "1.0.1",
+  "main"        : "dist/angular-locale_tr-tr.min.js",
+  "version"     : "1.0.2",
+  "description" : "tr-tr locale for AngularJs | AngularJs için tr-tr yereli",
+  "license"     : "MIT",
   "authors"     : [
     "Fırat KÜÇÜK <firat[at]codv[dot]io>"
   ],
-  "description" : "tr-tr locale for AngularJs",
   "moduleType"  : [
     "globals"
   ],
@@ -17,9 +18,10 @@
     "url" : "https://github.com/codvio/angular-locale_tr-tr.git"
   },
   "keywords"    : [
-    "locale"
+    "locale",
+    "tr",
+    "tr-tr"
   ],
-  "license"     : "MIT",
   "ignore"      : [
     "**/.*",
     "node_modules",
