@@ -1,7 +1,7 @@
 {
   "name"        : "angular-locale_tr-tr",
   "main"        : "angular-locale_tr-tr.js",
-  "version"     : "1.0.0",
+  "version"     : "1.0.1",
   "authors"     : [
     "Fırat KÜÇÜK <firat[at]codv[dot]io>"
   ],

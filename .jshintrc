@@ -14,7 +14,7 @@
   "newcap"   : true,
   "noarg"    : true,
   "node"     : true,
-  "quotmark" : "single",
+  "quotmark" : "double",
   "smarttabs": true,
   "strict"   : true,
   "trailing" : true,
