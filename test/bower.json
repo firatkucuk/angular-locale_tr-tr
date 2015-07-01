@@ -1,0 +1,8 @@
+{
+  "name"        : "trLocaleTestApp",
+  "version"     : "1.0.0",
+  "moduleName"  : "trLocaleTestApp",
+  "dependencies": {
+    "angular": ">= 1.0.8"
+  }
+}

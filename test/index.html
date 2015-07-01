@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html class="no-js" lang="tr" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>tr-tr AngularJS Yerel Testi | tr-tr AngularJs Locale Test</title>
+    <meta name="description" content="ilaç takip sistemi izleme paneli">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=tr&subset=latin,latin-ext">
+    <link rel="stylesheet" href=""/>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../angular-locale_tr-tr.js"></script>
+    <style>
+      body {
+        background-color : #F8F8F8;
+        font-family      : "Open Sans", serif, sans-serif sans-serif;
+        font-size        : 11pt;
+      }
+
+      table {
+        width  : 800px;
+        margin : 100px auto auto;
+        border : 1px solid #252525;
+      }
+
+      tr.table-header {
+        background-color : bisque;
+      }
+
+      th {
+        padding    : 5px;
+        font-size  : 110%;
+        text-align : left;
+      }
+
+      td {
+        padding    : 5px;
+        border-top : 1px solid #252525;
+      }
+    </style>
+    <base href="/">
+  </head>
+  <body>
+    <table cellpadding="0" cellspacing="0">
+      <tr class="table-header">
+        <th>Tanım</th>
+        <th>Description</th>
+        <th>Örnek</th>
+      </tr>
+      <tr>
+        <td>Tam Tarih</td>
+        <td>Full Date</td>
+        <td>{{1406937600000 | date: 'fullDate'}}</td>
+      </tr>
+      <tr>
+        <td>Uzun Tarih</td>
+        <td>Long Date</td>
+        <td>{{1406937600000 | date: 'longDate'}}</td>
+      </tr>
+      <tr>
+        <td>Orta Tarih Zaman</td>
+        <td>Medium Date Time</td>
+        <td>{{1406937600000 | date: 'medium'}}</td>
+      </tr>
+      <tr>
+        <td>Orta Tarih</td>
+        <td>Medium Date</td>
+        <td>{{1406937600000 | date: 'mediumDate'}}</td>
+      </tr>
+      <tr>
+        <td>Orta Zaman</td>
+        <td>Medium Time</td>
+        <td>{{1406937600000 | date: 'mediumTime'}}</td>
+      </tr>
+      <tr>
+        <td>Kısa Tarih Zaman</td>
+        <td>Short Date Time</td>
+        <td>{{1406937600000 | date: 'short'}}</td>
+      </tr>
+      <tr>
+        <td>Kısa Tarih</td>
+        <td>Short Date</td>
+        <td>{{1406937600000 | date: 'shortDate'}}</td>
+      </tr>
+      <tr>
+        <td>Kısa Zaman</td>
+        <td>Short Time</td>
+        <td>{{1406937600000 | date: 'shortTime'}}</td>
+      </tr>
+      <tr>
+        <td>ÖÖ/ÖS</td>
+        <td>AM/PM</td>
+        <td>{{1406937600000 | date: 'hh:mm a'}}</td>
+      </tr>
+      <tr>
+        <td>Gün</td>
+        <td>Day</td>
+        <td>{{1406937600000 | date: 'EEEE'}}</td>
+      </tr>
+      <tr>
+        <td>Gün (Kısa)</td>
+        <td>Day (Short)</td>
+        <td>{{1406937600000 | date: 'EEE'}}</td>
+      </tr>
+      <tr>
+        <td>Ay</td>
+        <td>Month</td>
+        <td>{{1406937600000 | date: 'MMMM'}}</td>
+      </tr>
+      <tr>
+        <td>Ay (Kısa)</td>
+        <td>Month (Short)</td>
+        <td>{{1406937600000 | date: 'MMM'}}</td>
+      </tr>
+      <tr>
+        <td>Çağ (MÖ/MS)</td>
+        <td>Era (BC/AD)</td>
+        <td>{{1406937600000 | date: 'yyyy G'}}</td>
+      </tr>
+      <tr>
+        <td>Çağ Uzun (MÖ/MS)</td>
+        <td>Era Long (BC/AD)</td>
+        <td>{{1406937600000 | date: 'yyyy GGGG'}}</td>
+      </tr>
+      <tr>
+        <td>Para Birimi</td>
+        <td>Currency</td>
+        <td>{{1000 | currency}}</td>
+      </tr>
+      <tr>
+        <td>Tam Sayı</td>
+        <td>Integer</td>
+        <td>{{1000 | number}}</td>
+      </tr>
+      <tr>
+        <td>Ondalık Sayı</td>
+        <td>Floating Point Number</td>
+        <td>{{3.14 | number}}</td>
+      </tr>
+      <tr>
+        <td>Çoğul Kategori ('hiç')</td>
+        <td>Plural Category ('hiç')</td>
+        <td>
+          <ng-pluralize count="0" when="{'hiç': 'Hiç kimse', 'bir': 'bir kişi', 'birçok': '{} kişi'}"></ng-pluralize>
+        </td>
+      </tr>
+      <tr>
+        <td>Çoğul Kategori ('bir')</td>
+        <td>Plural Category ('bir')</td>
+        <td>
+          <ng-pluralize count="1" when="{'hiç': 'Hiç kimse', 'bir': 'bir kişi', 'birçok': '{} kişi'}"></ng-pluralize>
+        </td>
+      </tr>
+      <tr>
+        <td>Çoğul Kategori ('birçok')</td>
+        <td>Plural Category ('birçok')</td>
+        <td>
+          <ng-pluralize count="5" when="{'hiç': 'Hiç kimse', 'bir': 'bir kişi', 'birçok': '{} kişi'}"></ng-pluralize>
+        </td>
+      </tr>
+    </table>
+
+    
+  </body>
+</html>
