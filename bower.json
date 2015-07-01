@@ -1,6 +1,6 @@
 {
   "name"        : "angular-locale_tr-tr",
-  "main"        : "angular-locale_tr-tr.min.js",
+  "main"        : "angular-locale_tr-tr.js",
   "version"     : "1.0.3",
   "description" : "tr-tr locale for AngularJs | AngularJs için tr-tr yereli",
   "license"     : "MIT",
